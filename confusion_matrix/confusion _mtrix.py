@@ -10,11 +10,7 @@ predicted = np.array(
 
 cm = confusion_matrix(actual,predicted)
 
-sns.heatmap(cm,
-			annot=True,
-			fmt='g',
-			xticklabels=['Dog','Not Dog'],
-			yticklabels=['Dog','Not Dog'])
+sns.heatmap(cm,annot=True,fmt='g',xticklabels=['Dog','Not Dog'],yticklabels=['Dog','Not Dog'])
 plt.ylabel('Prediction',fontsize=13)
 plt.xlabel('Actual',fontsize=13)
 plt.title('Confusion Matrix',fontsize=17)
