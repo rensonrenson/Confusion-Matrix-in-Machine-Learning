@@ -20,9 +20,7 @@ y_pred = clf.predict(X_test)
 cm = confusion_matrix(y_test,y_pred)
 
 
-sns.heatmap(cm,
-			annot=True,
-			fmt='g')
+sns.heatmap(cm,annot=True,fmt='g')
 plt.ylabel('Prediction',fontsize=13)
 plt.xlabel('Actual',fontsize=13)
 plt.title('Confusion Matrix',fontsize=17)
